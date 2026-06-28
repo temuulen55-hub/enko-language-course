@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom'
-import { Phone, MapPin } from 'lucide-react'
-import EnkoLogo from './EnkoLogo'
+import { Link } from "react-router-dom";
+import { Phone, MapPin } from "lucide-react";
+import EnkoLogo from "./EnkoLogo";
 
 export default function Footer() {
   return (
@@ -14,16 +14,29 @@ export default function Footer() {
             </div>
             <p className="text-slate-500 text-sm leading-relaxed max-w-xs">
               Англи, Солонгос хэлний цахим болон танхимийн мэргэжлийн сургалт.
+              Website is made by E. Temuulen
             </p>
           </div>
 
           {/* Links */}
           <div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-5">Холбоосууд</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-5">
+              Холбоосууд
+            </p>
             <ul className="space-y-3">
-              {[['/', 'Нүүр'], ['/about', 'Бидний тухай'], ['/courses', 'Сургалтууд'], ['/teachers', 'Багш нар'], ['/testimonials', 'Сэтгэгдэл'], ['/contact', 'Холбоо барих']].map(([to, label]) => (
+              {[
+                ["/", "Нүүр"],
+                ["/about", "Бидний тухай"],
+                ["/courses", "Сургалтууд"],
+                ["/teachers", "Багш нар"],
+                ["/testimonials", "Сэтгэгдэл"],
+                ["/contact", "Холбоо барих"],
+              ].map(([to, label]) => (
                 <li key={to}>
-                  <Link to={to} className="text-sm text-slate-400 hover:text-white transition-colors">
+                  <Link
+                    to={to}
+                    className="text-sm text-slate-400 hover:text-white transition-colors"
+                  >
                     {label}
                   </Link>
                 </li>
@@ -33,18 +46,38 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-5">Холбоо барих</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-5">
+              Холбоо барих
+            </p>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <Phone size={15} className="text-slate-500 mt-0.5 flex-shrink-0" />
+                <Phone
+                  size={15}
+                  className="text-slate-500 mt-0.5 flex-shrink-0"
+                />
                 <div className="space-y-0.5">
-                  <a href="tel:99625232" className="block text-sm text-slate-400 hover:text-white transition-colors">99625232</a>
-                  <a href="tel:80858311" className="block text-sm text-slate-400 hover:text-white transition-colors">80858311</a>
+                  <a
+                    href="tel:99625232"
+                    className="block text-sm text-slate-400 hover:text-white transition-colors"
+                  >
+                    99625232
+                  </a>
+                  <a
+                    href="tel:80858311"
+                    className="block text-sm text-slate-400 hover:text-white transition-colors"
+                  >
+                    80858311
+                  </a>
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <MapPin size={15} className="text-slate-500 mt-0.5 flex-shrink-0" />
-                <p className="text-sm text-slate-400">Модны 2, Сан их сургууль 4-407</p>
+                <MapPin
+                  size={15}
+                  className="text-slate-500 mt-0.5 flex-shrink-0"
+                />
+                <p className="text-sm text-slate-400">
+                  Модны 2, Сан их сургууль 4-407
+                </p>
               </li>
             </ul>
           </div>
@@ -52,11 +85,14 @@ export default function Footer() {
 
         <div className="border-t border-slate-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="text-xs text-slate-600">
-            © {new Date().getFullYear()} Enko Language Center 2. Бүх эрх хамгаалагдсан.
+            © {new Date().getFullYear()} Enko Language Center 2. Бүх эрх
+            хамгаалагдсан.
           </p>
-          <p className="text-xs text-slate-700 tracking-wide">Англи · Солонгос хэл</p>
+          <p className="text-xs text-slate-700 tracking-wide">
+            Англи · Солонгос хэл
+          </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }
