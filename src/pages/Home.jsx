@@ -83,7 +83,7 @@ export default function Home() {
           {/* Left */}
           <div>
             <motion.p {...fadeUp(0)} className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-6">
-              Enko Language Center 2
+              Temka Language Center 2
             </motion.p>
             <motion.h1
               {...fadeUp(0.06)}
@@ -140,7 +140,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="mb-16">
             <SectionTitle
-              tag="Яагаад Enko?"
+              tag="Яагаад Temka?"
               title="Бидний давуу талууд"
               subtitle="Таны хэл сурах аялалыг хамгийн үр дүнтэй болгох тал бүрийн дэмжлэг."
             />
@@ -227,10 +227,10 @@ export default function Home() {
           </motion.div>
           <motion.div {...inView(0.08)} className="flex flex-wrap gap-4 flex-shrink-0">
             <a
-              href="tel:99625232"
+              href="tel:99999999"
               className="px-7 py-3.5 bg-white text-slate-900 text-sm font-semibold hover:bg-slate-100 transition-colors"
             >
-              99625232
+              9999 9999
             </a>
             <Link to="/contact">
               <span className="inline-block px-7 py-3.5 border border-slate-700 text-slate-300 text-sm font-medium hover:border-slate-500 hover:text-white transition-colors cursor-pointer">

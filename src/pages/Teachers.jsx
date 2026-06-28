@@ -190,7 +190,7 @@ export default function Teachers() {
           </motion.div>
           <motion.a
             {...inView(0.08)}
-            href="tel:99625232"
+            href="tel:99999999"
             whileHover={{ opacity: 0.85 }}
             className="flex-shrink-0 px-7 py-3.5 bg-white text-slate-900 text-sm font-semibold hover:bg-slate-100 transition-colors"
           >

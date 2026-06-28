@@ -15,12 +15,12 @@ const contactDetails = [
   {
     Icon: Phone,
     label: 'Утасны дугаар',
-    lines: [{ text: '99625232', href: 'tel:99625232' }, { text: '80858311', href: 'tel:80858311' }],
+    lines: [{ text: '9999 9999', href: 'tel:99999999' }],
   },
   {
     Icon: MapPin,
     label: 'Байршил',
-    lines: [{ text: 'Модны 2, Сан их сургууль 4-407', href: null }],
+    lines: [{ text: 'Ulaanbaatar, Mongolia', href: null }],
   },
   {
     Icon: Clock,
@@ -121,16 +121,10 @@ export default function Contact() {
             {/* Quick dial */}
             <motion.div {...inView(0.24)} className="mt-10 flex flex-wrap gap-3">
               <a
-                href="tel:99625232"
+                href="tel:99999999"
                 className="inline-flex items-center gap-2 px-5 py-2.5 bg-slate-900 text-white text-sm font-medium hover:bg-slate-700 transition-colors"
               >
-                <Phone size={14} strokeWidth={1.5} /> 99625232
-              </a>
-              <a
-                href="tel:80858311"
-                className="inline-flex items-center gap-2 px-5 py-2.5 border border-slate-200 text-slate-700 text-sm font-medium hover:border-slate-400 hover:text-slate-900 transition-colors"
-              >
-                <Phone size={14} strokeWidth={1.5} /> 80858311
+                <Phone size={14} strokeWidth={1.5} /> 9999 9999
               </a>
             </motion.div>
           </div>
