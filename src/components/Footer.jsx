@@ -14,7 +14,7 @@ export default function Footer() {
             </div>
             <p className="text-slate-500 text-sm leading-relaxed max-w-xs">
               Англи, Солонгос хэлний цахим болон танхимийн мэргэжлийн сургалт.
-              Webside is made by E. Temuulen
+              Website is made by E. Temuulen
             </p>
           </div>
 
