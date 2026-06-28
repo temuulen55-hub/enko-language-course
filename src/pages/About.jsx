@@ -50,7 +50,7 @@ export default function About() {
             transition={{ duration: 0.22, delay: 0.04 }}
             className="text-5xl md:text-6xl font-bold text-slate-900 tracking-tight leading-tight max-w-2xl text-balance"
           >
-            Enko Language Center 2
+            Temka Language Center 2
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 10 }}
@@ -73,7 +73,7 @@ export default function About() {
             />
             <div className="mt-8 space-y-5 text-slate-500 text-base leading-relaxed">
               <p>
-                Enko Language Center 2 нь Монголын залуучуудыг гадаад хэлний боловсролоор хангах зорилгоор байгуулагдсан. Англи болон Солонгос хэлний сургалтыг цахим болон танхимийн хэлбэрээр явуулдаг.
+                Temka Language Center 2 нь Монголын залуучуудыг гадаад хэлний боловсролоор хангах зорилгоор байгуулагдсан. Англи болон Солонгос хэлний сургалтыг цахим болон танхимийн хэлбэрээр явуулдаг.
               </p>
               <p>
                 Бид жижиг бүлгийн хэлбэрээр ажиллах замаар хувь хүн бүрт анхаарал хандуулж, тогтмол үнэлгээ, дасгал даалгавраар суралцагчийн дэвшлийг баталгаажуулдаг.

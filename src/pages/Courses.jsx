@@ -183,7 +183,7 @@ const clubs = [
 
 const highlights = [
   { label: 'Цахим сургалт', sub: 'Zoom & Google Meet' },
-  { label: 'Танхимын сургалт', sub: 'Сан их сургууль 4-407' },
+  { label: 'Танхимын сургалт', sub: 'Ulaanbaatar, Mongolia' },
   { label: 'Жижиг бүлэг', sub: '5 – 8 суралцагч' },
   { label: 'Гэрчилгээ', sub: 'Дүүргэлтийн дараа олгоно' },
 ]
