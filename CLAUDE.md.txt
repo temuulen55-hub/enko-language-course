@@ -1,0 +1,9 @@
+# Project: Enko Language Center 2
+- **Goal**: Build a professional, minimalist, premium educational website for a Mongolian language center.
+- **Design Philosophy**:
+    - Ultra-professional and clean (minimalist agency aesthetic).
+    - No gradients, no rainbow colors. Use deep slate/charcoal and a single muted accent color (navy/midnight blue).
+    - No emojis. Use SVG icons for all visual elements.
+    - Focus on typography and generous whitespace.
+- **Animations**: Subtle, fast ($200\text{ms}$) micro-interactions only. Use Framer Motion.
+- **Tech Stack**: React (Vite), Tailwind CSS, Framer Motion, React Router.

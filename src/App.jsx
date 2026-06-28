@@ -5,6 +5,8 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
 import Courses from './pages/Courses'
+import Teachers from './pages/Teachers'
+import Testimonials from './pages/Testimonials'
 import Contact from './pages/Contact'
 
 export default function App() {
@@ -19,6 +21,8 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/courses" element={<Courses />} />
+            <Route path="/teachers" element={<Teachers />} />
+            <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </AnimatePresence>
