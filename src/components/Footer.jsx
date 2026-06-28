@@ -51,13 +51,24 @@ export default function Footer() {
             </p>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <Phone size={15} className="text-slate-500 mt-0.5 flex-shrink-0" />
+                <Phone
+                  size={15}
+                  className="text-slate-500 mt-0.5 flex-shrink-0"
+                />
                 <div className="space-y-0.5">
-                  <a href="tel:99999999" className="block text-sm text-slate-400 hover:text-white transition-colors">9999 9999</a>
+                  <a
+                    href="tel:99999999"
+                    className="block text-sm text-slate-400 hover:text-white transition-colors"
+                  >
+                    9999 9999
+                  </a>
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <MapPin size={15} className="text-slate-500 mt-0.5 flex-shrink-0" />
+                <MapPin
+                  size={15}
+                  className="text-slate-500 mt-0.5 flex-shrink-0"
+                />
                 <p className="text-sm text-slate-400">Ulaanbaatar, Mongolia</p>
               </li>
             </ul>
@@ -66,9 +77,12 @@ export default function Footer() {
 
         <div className="border-t border-slate-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="text-xs text-slate-600">
-            © {new Date().getFullYear()} Temka Language Center 2. Бүх эрх хамгаалагдсан.
+            © {new Date().getFullYear()} Temka Language Center. Бүх эрх
+            хамгаалагдсан.
           </p>
-          <p className="text-xs text-slate-700 tracking-wide">Англи · Солонгос хэл</p>
+          <p className="text-xs text-slate-700 tracking-wide">
+            Англи · Солонгос хэл
+          </p>
         </div>
       </div>
     </footer>

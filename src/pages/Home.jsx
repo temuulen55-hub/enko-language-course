@@ -1,66 +1,66 @@
-import { Link } from 'react-router-dom'
-import { motion } from 'framer-motion'
-import { ArrowRight, Monitor, Users, Award, BookOpen } from 'lucide-react'
-import PageTransition from '../components/PageTransition'
-import SectionTitle from '../components/SectionTitle'
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { ArrowRight, Monitor, Users, Award, BookOpen } from "lucide-react";
+import PageTransition from "../components/PageTransition";
+import SectionTitle from "../components/SectionTitle";
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 12 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.22, delay, ease: 'easeOut' },
-})
+  transition: { duration: 0.22, delay, ease: "easeOut" },
+});
 
 const inView = (delay = 0) => ({
   initial: { opacity: 0, y: 10 },
   whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true, margin: '-40px' },
-  transition: { duration: 0.2, delay, ease: 'easeOut' },
-})
+  viewport: { once: true, margin: "-40px" },
+  transition: { duration: 0.2, delay, ease: "easeOut" },
+});
 
 const stats = [
-  { value: '500+', label: 'Суралцагчид' },
-  { value: '5+', label: 'Жил туршлага' },
-  { value: '95%', label: 'Амжилтын хувь' },
-  { value: '2', label: 'Хэл' },
-]
+  { value: "500+", label: "Суралцагчид" },
+  { value: "5+", label: "Жил туршлага" },
+  { value: "95%", label: "Амжилтын хувь" },
+  { value: "2", label: "Хэл" },
+];
 
 const features = [
   {
     Icon: Monitor,
-    title: 'Цахим сургалт',
-    desc: 'Дурын газраас, дурын цагт. Zoom болон бичлэгийн хэлбэрээр хичээллэнэ.',
+    title: "Цахим сургалт",
+    desc: "Дурын газраас, дурын цагт. Zoom болон бичлэгийн хэлбэрээр хичээллэнэ.",
   },
   {
     Icon: Users,
-    title: 'Танхимын сургалт',
-    desc: 'Жижиг бүлгийн хамт олонтой нүүр тулан суралцаж харилцааны ур чадвар эзэмшинэ.',
+    title: "Танхимын сургалт",
+    desc: "Жижиг бүлгийн хамт олонтой нүүр тулан суралцаж харилцааны ур чадвар эзэмшинэ.",
   },
   {
     Icon: BookOpen,
-    title: 'Бүрэн хөтөлбөр',
-    desc: 'Анхан шатнаас ахисан түвшин хүртэлх бүтэн сургалтын замнал.',
+    title: "Бүрэн хөтөлбөр",
+    desc: "Анхан шатнаас ахисан түвшин хүртэлх бүтэн сургалтын замнал.",
   },
   {
     Icon: Award,
-    title: 'Гэрчилгээ',
-    desc: 'Хөтөлбөр амжилттай дүүргэсэн тохиолдолд баталгаажсан гэрчилгээ олгоно.',
+    title: "Гэрчилгээ",
+    desc: "Хөтөлбөр амжилттай дүүргэсэн тохиолдолд баталгаажсан гэрчилгээ олгоно.",
   },
-]
+];
 
 const courses = [
   {
-    lang: 'Англи хэл',
-    sub: 'English Language',
-    levels: ['Анхан шат', 'Дунд шат', 'Ахисан шат'],
-    desc: 'A1 түвшинтэй эхлэгчдэд зориулсан анхан шатнаас эхлэн IELTS бэлтгэл хүртэлх бүтэн замнал.',
+    lang: "Англи хэл",
+    sub: "English Language",
+    levels: ["Анхан шат", "Дунд шат", "Ахисан шат"],
+    desc: "A1 түвшинтэй эхлэгчдэд зориулсан анхан шатнаас эхлэн IELTS бэлтгэл хүртэлх бүтэн замнал.",
   },
   {
-    lang: 'Солонгос хэл',
-    sub: 'Korean Language',
-    levels: ['Анхан шат', 'Дунд шат', 'Ахисан шат'],
-    desc: 'Хангыл цагаан толгойгоос эхлэн TOPIK II шалгалтын бэлтгэл хүртэлх бүтэн хөтөлбөр.',
+    lang: "Солонгос хэл",
+    sub: "Korean Language",
+    levels: ["Анхан шат", "Дунд шат", "Ахисан шат"],
+    desc: "Хангыл цагаан толгойгоос эхлэн TOPIK II шалгалтын бэлтгэл хүртэлх бүтэн хөтөлбөр.",
   },
-]
+];
 
 export default function Home() {
   return (
@@ -73,7 +73,7 @@ export default function Home() {
           style={{
             backgroundImage: `linear-gradient(rgba(255,255,255,.6) 1px, transparent 1px),
               linear-gradient(90deg, rgba(255,255,255,.6) 1px, transparent 1px)`,
-            backgroundSize: '60px 60px',
+            backgroundSize: "60px 60px",
           }}
         />
         {/* Glow */}
@@ -82,8 +82,11 @@ export default function Home() {
         <div className="relative max-w-6xl mx-auto px-6 lg:px-8 pt-32 pb-24 grid lg:grid-cols-2 gap-16 items-center">
           {/* Left */}
           <div>
-            <motion.p {...fadeUp(0)} className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-6">
-              Temka Language Center 2
+            <motion.p
+              {...fadeUp(0)}
+              className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-6"
+            >
+              Temka Language Center
             </motion.p>
             <motion.h1
               {...fadeUp(0.06)}
@@ -91,7 +94,10 @@ export default function Home() {
             >
               Гадаад хэлний мэргэжлийн сургалт
             </motion.h1>
-            <motion.p {...fadeUp(0.12)} className="text-slate-400 text-lg leading-relaxed mb-10 max-w-md">
+            <motion.p
+              {...fadeUp(0.12)}
+              className="text-slate-400 text-lg leading-relaxed mb-10 max-w-md"
+            >
               Англи, Солонгос хэлийг цахим болон танхимын хэлбэрээр эзэмшиж,
               карьер болон амьдралынхаа боломжийг нэмэгдүүлнэ.
             </motion.p>
@@ -124,8 +130,12 @@ export default function Home() {
           >
             {stats.map(({ value, label }) => (
               <div key={label} className="bg-slate-900 p-8">
-                <p className="text-3xl font-bold text-white tracking-tight mb-1">{value}</p>
-                <p className="text-xs text-slate-500 uppercase tracking-widest">{label}</p>
+                <p className="text-3xl font-bold text-white tracking-tight mb-1">
+                  {value}
+                </p>
+                <p className="text-xs text-slate-500 uppercase tracking-widest">
+                  {label}
+                </p>
               </div>
             ))}
           </motion.div>
@@ -155,7 +165,9 @@ export default function Home() {
                 <div className="w-8 h-8 mb-6 text-slate-900 group-hover:text-slate-600 transition-colors">
                   <Icon size={22} strokeWidth={1.5} />
                 </div>
-                <h3 className="font-semibold text-slate-900 text-base mb-3">{title}</h3>
+                <h3 className="font-semibold text-slate-900 text-base mb-3">
+                  {title}
+                </h3>
                 <p className="text-slate-500 text-sm leading-relaxed">{desc}</p>
               </motion.div>
             ))}
@@ -189,9 +201,15 @@ export default function Home() {
                 {...inView(i * 0.08)}
                 className="bg-white p-10 group"
               >
-                <p className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">{sub}</p>
-                <h3 className="text-2xl font-bold text-slate-900 tracking-tight mb-4">{lang}</h3>
-                <p className="text-slate-500 text-sm leading-relaxed mb-6">{desc}</p>
+                <p className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">
+                  {sub}
+                </p>
+                <h3 className="text-2xl font-bold text-slate-900 tracking-tight mb-4">
+                  {lang}
+                </h3>
+                <p className="text-slate-500 text-sm leading-relaxed mb-6">
+                  {desc}
+                </p>
                 <div className="flex flex-wrap gap-2 mb-8">
                   {levels.map((lv) => (
                     <span
@@ -220,12 +238,17 @@ export default function Home() {
       <section className="py-28 bg-slate-900">
         <div className="max-w-6xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row md:items-center justify-between gap-10">
           <motion.div {...inView()}>
-            <p className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-4">Эхлэцгээе</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-4">
+              Эхлэцгээе
+            </p>
             <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight leading-tight text-balance">
               Өнөөдөр сургалтад бүртгүүлэх
             </h2>
           </motion.div>
-          <motion.div {...inView(0.08)} className="flex flex-wrap gap-4 flex-shrink-0">
+          <motion.div
+            {...inView(0.08)}
+            className="flex flex-wrap gap-4 flex-shrink-0"
+          >
             <a
               href="tel:99999999"
               className="px-7 py-3.5 bg-white text-slate-900 text-sm font-semibold hover:bg-slate-100 transition-colors"
@@ -241,5 +264,5 @@ export default function Home() {
         </div>
       </section>
     </PageTransition>
-  )
+  );
 }
