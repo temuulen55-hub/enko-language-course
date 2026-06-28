@@ -21,7 +21,7 @@ export default function Footer() {
           <div>
             <p className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-5">Холбоосууд</p>
             <ul className="space-y-3">
-              {[['/', 'Нүүр'], ['/about', 'Бидний тухай'], ['/courses', 'Сургалтууд'], ['/contact', 'Холбоо барих']].map(([to, label]) => (
+              {[['/', 'Нүүр'], ['/about', 'Бидний тухай'], ['/courses', 'Сургалтууд'], ['/teachers', 'Багш нар'], ['/testimonials', 'Сэтгэгдэл'], ['/contact', 'Холбоо барих']].map(([to, label]) => (
                 <li key={to}>
                   <Link to={to} className="text-sm text-slate-400 hover:text-white transition-colors">
                     {label}
